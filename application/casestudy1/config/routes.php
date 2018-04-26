@@ -52,3 +52,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+/* Routing untuk sesi 1 */
+$route['auth']				= 'sesi1/auth';
+$route['auth/login']	= 'sesi1/auth/login';
+$route['auth/logout']	= 'sesi1/auth/logout';
+$route['auth/change_password']				= 'sesi1/auth/change_password';
+$route['auth/forgot_password']				= 'sesi1/auth/forgot_password';
+$route['auth/reset_password/(:any)'] 	= 'sesi1/auth/reset_password';
+$route['auth/activate/(:num)'] 		= 'sesi1/auth/activate/$1';
+$route['auth/deactivate/(:num)'] 	= 'sesi1/auth/deactivate/$1';
+$route['auth/create_user'] 				= 'sesi1/auth/create_user';
+$route['auth/redirectUser'] 			= 'sesi1/auth/redirectUser';
+$route['auth/edit_user/(:num)'] 	= 'sesi1/auth/edit_user/$1';
+$route['auth/create_group'] 			= 'sesi1/auth/create_group';
+$route['auth/edit_group/(:num)'] 	= 'sesi1/auth/edit_group/$1';
+$route['auth/_get_csrf_nonce'] 		= 'sesi1/auth/_get_csrf_nonce';
+$route['auth/_valid_csrf_nonce'] 	= 'sesi1/auth/_valid_csrf_nonce';
+// $route['auth/_render_page'] 			= 'sesi1/auth/_render_page';
